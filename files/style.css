@@ -1,0 +1,49 @@
+*{
+    margin:0; /*establecemos el margen en 0*/
+    box-sizing: border-box; 
+}
+
+body{
+    font-family:sans-serif;/*tipo de fuente*/
+    padding: 90px 20px 0px; /*140px - relleno de 90px, a los lados 20px y abajo 0*/
+}
+
+.header{
+    background-color: #0769e9;/*color de fondo del header*/
+    height: 80px;/*alto de 80 px*/
+    position: fixed;/* fijar la posición del header*/
+    width: 100%; /*ancho de 100% de la pantalla*/
+    top: 0; /*ayuda a mantener fijo el header*/
+    left: 0; /*ayuda a mantener fijo el header*/
+}
+
+.nav{
+    display: flex; /*alinea los elementos*/
+    justify-content: space-between; /*separa los elementos del nav*/
+}
+
+.logo{
+    font-size: 30px; /*tamaño texto*/
+    font-weight: bold; /*letra mas "fuerte"*/
+    padding: 0 40px; /*arriba y abajo 0 - izquierda - derecha 30px*/
+    line-height: 80px; /*alto de linea mismo que tamaño del header - logo queda centrado*/
+}
+
+.nav-link {
+    color: white; /*color del texto*/
+    text-decoration: none; /*quitamos el subrayado*/
+}
+
+.nav-menu {
+    display: flex; /*elementos en forma horizontal*/
+    margin-right: 40px; /*distancia de margen derecho*/
+    list-style: none; /*eliminamos puntos de la lista*/
+    
+}
+
+.nav-menu-item{
+    font-size: 18px; /*tamaño de letra*/
+    margin: 0 10px ; /*margen entre elementos arriba abajo 0 y a los lados 10px*/
+    line-height: 80px; /*alto de linea mismo que tamaño del header - elementos centrados*/
+    text-transform: uppercase; /*letras en mayúsculas*/
+}
