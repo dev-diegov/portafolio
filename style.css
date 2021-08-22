@@ -46,4 +46,15 @@ body{
     margin: 0 10px ; /*margen entre elementos arriba abajo 0 y a los lados 10px*/
     line-height: 80px; /*alto de linea mismo que tamaño del header - elementos centrados*/
     text-transform: uppercase; /*letras en mayúsculas*/
+    width: max-content; /*no se corta el contenido hacia abajo, se muestra todo*/
+}
+
+.nav-menu-link{
+    padding: 8px 12px; /*relleno arriba y abajo 8px a los lados 12px*/
+    border-radius: 3px; /*tamaño borde del padding*/
+}
+
+.nav-menu-link:hover{
+    background-color: #034574; /*color de fondo*/
+    transition: 0.5s; /*tiempo de transición en que aparezca el padding*/
 }
