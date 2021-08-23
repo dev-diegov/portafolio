@@ -20,6 +20,8 @@ body{
 .nav{
     display: flex; /*alinea los elementos*/
     justify-content: space-between; /*separa los elementos del nav*/
+    max-width: 1400px; /*máximo ancho de navegador en pantallas grandes*/
+    margin: 0 auto; /*arriba y abajo 0*/
 }
 
 .logo{
@@ -54,7 +56,73 @@ body{
     border-radius: 3px; /*tamaño borde del padding*/
 }
 
-.nav-menu-link:hover{
+.nav-menu-link:hover,
+.nav-menu-link_active{
     background-color: #034574; /*color de fondo*/
     transition: 0.5s; /*tiempo de transición en que aparezca el padding*/
+}
+
+.nav-toggle{
+    color:white; /*color de lineas*/
+    background: none; /*color de fondo*/
+    border: none; /*tipo borde*/
+    font-size: 30px; /*tamaño texto*/
+    padding: 0 20px; /*relleno arriba y abajo 0 a los lados 20px*/
+    line-height: 60px; /*alto de linea distinto tamaño para navegadores - elementos centrados*/
+    display: none; /*se va a ocultar en dispositivo escritorio*/
+    cursor: pointer;/*agregamos cursor manito*/
+}
+
+@media (max-width: 768px){
+    body {
+        padding-top: 70px; /*distancia del banner con el contenido*/
+    }
+
+    .header{
+        height: 60px; /*alto de 60 px - mas pequeño para dispositivos móviles*/
+    }
+
+    .logo{
+        font-size: 25px; /*tamaño texto*/
+        padding: 0 20px; /*arriba y abajo 0 - izquierda - derecha 40px*/
+        line-height: 60px; /*alto de linea mismo que tamaño del header - logo queda centrado*/
+    }
+    
+    .nav-menu {
+        flex-direction: column; /*elementos en columnas hacia abajo*/
+        align-items: center; /*centramos los elementos*/
+        margin-right: 20px; /*distancia de margen derecho*/
+        background-color: #2c3e50; /*color de fondo del nav*/
+        position: fixed; /*fijamos el nav a la pantalla*/
+        left: 100%; /**/
+        top: 60px; /*alto del elemento*/
+        width: 100%; /*ancho del 100%*/
+        padding: 20px 0; /*arriba y abajo 20px y 0 a los lados*/
+        height: calc(100% - 60px); /*alto = se estira el nav hacia abajo*/
+        overflow-y: auto; /*scrollbar si el dispositivo móvil tiene mucho zoom*/
+        transition: left 0.3s; /*transición para que el menu aparezca lento*/
+    }
+    
+    .nav-menu-item{
+        line-height: 70px; /*alto de linea mismo que tamaño del header - elementos centrados*/
+    }
+
+    .nav-menu-link:hover,
+    .nav-menu-link_active{
+        background-color: none; /*color de fondo*/
+        color: #83c5f7; /*color texto*/
+    }
+
+    .nav-toggle{
+        display: block; /*mostramos el botón del nav menú*/
+    }
+
+    .nav-menu_visible{
+        left: 0; /*el menu aparece hacia la izquierda*/
+    }
+    /*acccesibilidad*/
+    /*dejamos outline cuando navegamos con el botón TABULADOR*/
+    .nav-toggle:focus:not(:focus-visible){
+        outline: none;
+    }
 }

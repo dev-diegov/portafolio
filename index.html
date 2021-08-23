@@ -11,11 +11,18 @@
     <title>Diego Donoso - Portafolio</title>
     <!--enlazamos los estilos de nuestro portafolio-->
     <link rel="stylesheet" href="style.css">
+    <!--enlazamos fontawesome para ícono menú-->
+    <script src= "https://kit.fontawesome.com/7e5b2d153f.js" crossorigin="anonymous"></script>
+    <!-- enlazamos js con la propiedad defer para no ponerlo al final del html-->
+    <script defer src="index.js"></script>
 </head>
 <body>
     <header class="header">
         <nav class="nav">
             <a href="#" class="logo nav-link">Logo</a>
+            <button class="nav-toggle" aria-label="Abrir menú">
+                <i class = "fas fa-bars"></i>
+            </button>
             <ul class="nav-menu">
                 <li class="nav-menu-item">
                     <a href="#" class="nav-menu-link nav-link">Inicio</a>
@@ -33,7 +40,7 @@
                     <a href="#" class="nav-menu-link nav-link">Proyectos</a>
                 </li>
                 <li class="nav-menu-item">
-                    <a href="#" class="nav-menu-link nav-link">Contáctame</a>
+                    <a href="#" class="nav-menu-link nav-link nav-menu-link_active">Contáctame</a>
                 </li>
             </ul>
         </nav>

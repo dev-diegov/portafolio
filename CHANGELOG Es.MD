@@ -6,3 +6,4 @@ Todos los cambios notables del proyecto serán documentados en este archivo.
 --------------------------------------------------
 
 Se agregó el encabezado principal
+Diseño responsivo para dispositivos móbiles (768px)
