@@ -3,9 +3,13 @@
     box-sizing: border-box; 
 }
 
+/*pseudo elemento */
+:root {
+    scroll-behavior: smooth; /*efecto desplazamiento al navegar en secciones*/
+}
+
 body{
     font-family:sans-serif;/*tipo de fuente*/
-    padding: 90px 20px 0px; /*140px - relleno de 90px, a los lados 20px y abajo 0*/
 }
 
 .header{
@@ -40,7 +44,6 @@ body{
     display: flex; /*elementos en forma horizontal*/
     margin-right: 40px; /*distancia de margen derecho*/
     list-style: none; /*eliminamos puntos de la lista*/
-    
 }
 
 .nav-menu-item{
@@ -73,6 +76,65 @@ body{
     cursor: pointer;/*agregamos cursor manito*/
 }
 
+.inicio{
+    height: 100vh; /*altura ventana*/
+    background-image: linear-gradient(to top, rgba(161, 140, 209, 0.7) 0%,
+    rgba(251, 194, 235, 0.8) 100%), url(../images/fondo-inicio.jpg);
+    background-repeat: no-repeat; /*imagen no se repite*/
+    background-size: cover; /*imagen cubre toda la pantalla*/
+    background-attachment: fixed;
+    background-position:center; /*imagen queda centrada dependiendo del tamaño de la pantalla*/
+}
+
+.home{
+    padding: 0;
+    height: 100%; /*ancho*/
+    display: flex; /*agrupamos en flex*/
+    justify-content: center; /*centramos*/
+    align-items: center; /*alineamos contenido al centro*/
+    color: hsl(0, 19%, 17%); /*color/transparencia*/
+    flex-direction: column; /*elementos hacia abajo*/
+}
+
+.home h1{
+    font-size: 55px;  /*tamaño nombre*/
+    font-family: sans-serif; /*tipo letra*/
+}
+
+.home h2{
+    font-size: 50px; /*tamaño profesión*/
+    font-family:monospace ; /*tipo letra*/
+}
+
+.home p{
+    font-size: 50px; /*tamaño frase*/
+    font-family: serif; /*tipo letra*/
+    color: black; /*color letra*/
+}
+/*linea que separa texto, tipo hr pero en css*/
+hr.new2 {
+    width: 25%; /*ancho*/
+    height: 0; /*largo*/
+    border: 1px solid whitesmoke; /*tamaño, tipo y color de borde*/
+    margin: 35px; /*espacio entre linea y textos*/
+    display:inline-block; /*formato*/
+}
+
+.btn-contact {
+    display: inline-block; /*formato*/
+    padding: 15px 25px; /*relleno 15 arriba y 25 a los lados*/
+    font-size: 24px; /*tamaño texto*/
+    cursor: pointer; /*clickeable*/
+    text-align: center; /*texto centrado*/
+    text-decoration: none; /*sin delineado*/
+    outline: none;
+    color: #fff; /*color texto*/
+    background-color: #0769e9; /*color de fondo*/
+    border: none; /*tipo de borde*/
+    border-radius: 15px; /*grosor borde*/
+    margin-top: 50px; /*distancia de botón*/
+}
+
 .footer{
     background:#f2f2f2;
     padding: 4rem 0; /*4rem = 64px*/
@@ -82,12 +144,12 @@ body{
 
 .footer img{
     margin: 5px;
-    width: 5%;
+    width: 10%;
 }
 
 @media (max-width: 768px){
     body {
-        padding-top: 70px; /*distancia del banner con el contenido*/
+        padding-top: 60px; /*distancia del banner con el contenido*/
     }
 
     .header{
@@ -138,3 +200,4 @@ body{
         outline: none;
     }
 }
+
