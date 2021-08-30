@@ -1,0 +1,72 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 300;
+}
+
+html{
+  font-size: 100%;
+}
+
+#header{
+  background: url(../image/banner1.webp);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  background-color: rgb(30, 30, 30);
+  background-blend-mode: soft-light;
+  animation: slide 7s infinite;
+}
+
+@keyframes slide {
+  0% {
+    background-image: url(../image/banner2.webp);
+  }
+
+  33% {
+    background-image: url(../image/banner3.webp);
+  }
+
+  67% {
+    background-image: url(../image/banner4.webp);
+  }
+}
+
+.logo{
+  width: 100px;
+  position: absolute;
+  top: 4%;
+  left: 10%;
+}
+
+.header-text{
+  text-align: center;
+  color:#fff;
+  padding-top: 9.250em; /*148px*/
+}
+
+.header-text h1{
+  font-size: 8.125rem; /* 130px*/
+}
+
+.header-text p{
+  font-size: 3.75rem; /* 60px*/
+  font-style: italic;
+  font-family: 'Quicksand', sans-serif; 
+  font-weight: bold;
+}
+
+.header-btn{
+  margin: 4.375em auto 0; /*70px*/
+}
+
+.header-btn a{
+  width: 150px;
+  display: inline-block;
+  text-decoration: none;
+  margin: 0 10px;
+  padding: 12px 0;
+  color: #fff;
+  border: 0.031em solid #698683; /*.5px*/
+}
