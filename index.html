@@ -4,9 +4,60 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/style.css">
     <title>Diego Donoso - Portafolio Web</title>
+
 </head>
 <body>
-    
+    <header>
+        <a href="#" class="logo">
+            Portafolio
+        </a>
+        <div class="toggle"></div>
+        <ul>
+            <li>
+                <a href="#">Inicio</a>
+            </li>
+            <li>
+                <a href="#">Sobre mí</a>
+            </li>
+            <li>
+                <a href="#">Conocimientos</a>
+            </li>
+            <li>
+                <a href="#">Proyectos</a>
+            </li>
+            <li>
+                <a href="#">Contacto</a>
+            </li>
+        </ul>
+    </header>
+    <section class="banner">
+        <div class="banner-text">
+            <h2>Hola, yo soy<br><span>Diego Donoso</span>.</h2> 
+            <h3>Técnico Analista Programador.</h3>
+            <a href="" class="btn">Sobre Mí</a>
+        </div>
+    </section>
+    <section class="about">
+        <div class="tittle">
+            <h2>Sobre Mí</h2>
+        </div>
+        <div class="content">
+            <div class="about-text w50">
+                <h2>Soy desarrollador de software</h2>
+                <p>Hola ✌, yo soy Diego Donoso, titulado en Técnico Analista Programador. Tengo 22 años, soy Chileno viviendo actualmente en Santiago. Me inicié en la programación a finales de 2011 con un lenguaje de programación llamado Pawn (lenguaje usado para programar modo de juegos en el juego GTA San Andreas en línea). Tengo conocimientos básicos en backend y frontend. Me gusta el diseño de los sistemas e interfaces web, el minimalismo, aprender cosas nuevos y afrontar los nuevos retos. Mis mayores pasatiempos son los videojuegos y programar.</p>
+            </div>
+            <div class="w50">
+                <img src="/assets/images/img1.jpg" class="img" alt="">
+            </div>
+        </div>
+    </section>
+    <script type="text/javascript">
+        window.addEventListener('scroll', function(){
+            var header = document.querySelector('header');
+            header.classList.toggle('sticky', window.scrollY > 0);
+        });
+    </script>
 </body>
 </html>

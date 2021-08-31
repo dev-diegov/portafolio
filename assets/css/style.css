@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+*{
+  margin: 0; /*reset de margen al 0*/
+  padding: 0; /*reset de padding al 0*/
+  box-sizing: border-box; /*tamaño y formato caja*/
+  font-family: 'Poppins', sans-serif; /*tipo de letra*/
+  font-size: 100%;  
+}
+
+header{
+  position: fixed; /*fijamos el header a la pantalla*/
+  top:0; /*ayudamos a que el header quede fijo*/
+  left:0; /*ayudamos a que el header quede fijo*/
+  width: 100%; /*ancho del header*/
+  padding: 2.500em 6.250em; /*40px arriba abajo y 100px a los lados*/
+  z-index: 100; /*orden de elemento posicionado*/
+  display: flex; /*caja flexible*/
+  justify-content: space-between; /*separamos los elementos de la caja*/
+  align-items:center; /*centramos los elementos*/
+  transition: 0.5s;
+}
+
+header.sticky{
+  background: #fff;
+  padding: 20px 100px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+header .logo{
+  color: #fff;
+  font-size: 1.5em; /*24px*/
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 700;
+  letter-spacing: 0.125em; /*2px - espacio entre letras*/ 
+}
+
+header.sticky .logo{
+  color: #111;
+}
+
+header ul{
+  position: relative;
+  display:flex;
+}
+
+header ul li{
+  position:relative;
+  list-style: none;
+}
+
+header ul li a{
+  position: relative;
+  display: inline-block;
+  margin: 0 0.938em; /*0 arriba abajo y 15px a los lados*/
+  color: #fff; /*color texto*/
+  text-decoration: none; /*quitamos subrayado*/
+}
+
+header.sticky ul li a{
+  color: #111;
+}
+
+section{
+  padding: 6.250em; /*100px*/
+}
+
+.banner{
+  position: relative; /*se moverá sin afectar la posición de los demas elementos*/
+  min-height: 100vh; /*usará todo el tamaño del largo dependiendo de la pantalla*/
+  background-image: url(/assets/images/banner4.webp); /*imagen de fondo*/
+  background-size: cover; /*la imagen se expande a la pantalla*/
+  background-position: right; /*posición de imagen de fondo*/
+  background-color: rgb(27, 26, 26); 
+  background-blend-mode: soft-light;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /**/
+  animation: banner 25s infinite linear;
+}
+
+@keyframes banner{ 
+  0%{ 
+    background-image: url('/assets/images/banner1.webp'); 
+  } 
+  26%{ 
+    background-image: url('/assets/images/banner1.webp');
+  } 
+  51%{ 
+    background-image: url('/assets/images/banner3.webp'); 
+  } 
+  100%{ 
+    background-image: url('/assets/images/banner4.webp'); 
+  } 
+}
+
+.banner h2{
+  font-size: 3em; /*48px*/
+  color: #fff;
+  font-weight: 500; /*grosor de letra*/
+  line-height: 1.5em; /*24px - altura de línea*/ 
+}
+
+.banner h2 span{
+  font-size: 1.5em; /*24px*/
+  font-weight: 700; /*grosor de letra*/
+}
+
+.banner h3{
+  font-size: 1.5em; /*24px*/
+  color:#fff; /*color letra*/
+  font-weight: 500; /*grosor de letra*/
+}
+
+.btn{
+  position: relative;
+  background: #2196f3; /*color fondo del botón*/
+  display: inline-block; /*elemento en linea con formato blockdonde se pueden aplicar valores height y width*/
+  color:#fff; /*color letra*/
+  margin-top: 1.250em; /*margen de arriba 20px*/
+  padding: 0.625em 1.875em; /*relleno de 10px arriba abajo y 30px a los lados*/
+  font-size: 1.125em; /*18px - tamaño letra*/
+  text-transform: uppercase; /*letras en mayúsculas*/
+  text-decoration: none; /*quitamos subrayado*/
+  letter-spacing: 0.125em; /*2px - espacio entre letras*/ 
+}
+
+.tittle{
+  width: 100%;
+  text-align: center;
+  margin-bottom: 1.875em; /*30px*/
+  color: #111;
+}
+
+.tittle h2{
+  font-weight: 600;
+  font-size: 1.875em; /*30px*/
+}
+
+.content{
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-text{
+  padding-right: 1.875em; /*30px*/
+}
+
+.about-text h3{
+  font-size: 1.5em; /*24px*/
+  margin-bottom: 0.625em; /*10px*/
+}
+
+.w50{
+  min-width: 50%; /*mínimo de ancho 50%*/
+}
+
+img{
+  max-width: 100%;
+}
