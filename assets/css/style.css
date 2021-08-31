@@ -69,7 +69,7 @@ section{
 .banner{
   position: relative; /*se moverá sin afectar la posición de los demas elementos*/
   min-height: 100vh; /*usará todo el tamaño del largo dependiendo de la pantalla*/
-  background-image: url(assets/images/banner4.webp); /*imagen de fondo*/
+  background-image: url(../images/banner1.webp); /*imagen de fondo*/
   background-size: cover; /*la imagen se expande a la pantalla*/
   background-position: right; /*posición de imagen de fondo*/
   background-color: rgb(27, 26, 26); 
@@ -82,16 +82,16 @@ section{
 
 @keyframes banner{ 
   0%{ 
-    background-image: url('assets/images/banner1.webp'); 
+    background-image: url(../images/banner1.webp); 
   } 
   26%{ 
-    background-image: url('assets/images/banner1.webp');
+    background-image: url(../images/banner1.webp);
   } 
   51%{ 
-    background-image: url('assets/images/banner3.webp'); 
+    background-image: url(../images/banner3.webp); 
   } 
   100%{ 
-    background-image: url('assets/images/banner4.webp'); 
+    background-image: url(../images/banner4.webp); 
   } 
 }
 
