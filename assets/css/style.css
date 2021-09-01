@@ -6,6 +6,7 @@
   box-sizing: border-box; /*tamaño y formato caja*/
   font-family: 'Poppins', sans-serif; /*tipo de letra*/
   font-size: 100%;  
+  scroll-behavior: smooth;
 }
 
 header{
@@ -21,7 +22,8 @@ header{
   transition: 0.5s;
 }
 
-header.sticky{
+/*nótese selector distinto = element .class no es igual a element.class */
+header.sticky{ 
   background: #fff;
   padding: 20px 100px;
   box-shadow: 0 5px 20px rgba(0,0,0,0.1);
@@ -158,4 +160,80 @@ section{
 
 img{
   max-width: 100%;
+}
+
+.skills{
+  background-color: #111;
+}
+
+.heading.white{
+  color:#fff
+}
+
+.skills .content{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.skills .content .skills-text{
+  padding: 10px 20px;
+  background: #222;
+  color: #fff;
+  max-width: 300px;
+  margin: 20px;
+  text-align: center;
+  transition: 0.5s;
+}
+
+.skills .content .skills-text:hover{
+  background: #2196f3;
+}
+
+.skills .content .skills-text img{
+  max-width: 80px;
+  filter:invert(1)
+}
+
+.skills .content .skills-text h2{
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.works .content{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.works .content .works-content{
+  /* width: 50%;
+  padding: 20px; */
+  padding: 10px 50px;
+  background: #222;
+  color: #fff;
+  max-width: 300px;
+  margin:10px;
+  text-align: center;
+}
+
+.works .content .works-content img{
+  max-width: 100%;
+}
+
+.contact{
+  background: #111;
+}
+
+.contact .content img{
+  max-width: 32%;
+}
+
+.copyright{
+  background: #000;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
 }
