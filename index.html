@@ -13,25 +13,25 @@
         <a href="#" class="logo">
             Portafolio
         </a>
-        <div class="toggle"></div>
-        <ul>
+        <div class="toggle" onclick="toggleMenu();"></div>
+        <ul class = "menu">
             <li>
-                <a href="#banner">Inicio</a>
+                <a href="#banner" onclick="toggleMenu();">Inicio</a>
             </li>
             <li>
-                <a href="#about">Sobre mí</a>
+                <a href="#about" onclick="toggleMenu();">Sobre mí</a>
             </li>
             <li>
-                <a href="#skills">Habilidades</a>
+                <a href="#skills" onclick="toggleMenu();">Habilidades</a>
             </li>
             <li>
-                <a href="#knowledge">Conocimientos</a>
+                <a href="#knowledge" onclick="toggleMenu();">Conocimientos</a>
             </li>
             <li>
-                <a href="#works">Proyectos</a>
+                <a href="#works" onclick="toggleMenu();">Proyectos</a>
             </li>
             <li>
-                <a href="#contact">Contacto</a>
+                <a href="#contact" onclick="toggleMenu();">Contacto</a>
             </li>
         </ul>
     </header>
@@ -43,7 +43,7 @@
         </div>
     </section>
     <section class="about" id="about">
-        <div class="tittle">
+        <div class="tittle heading white">
             <h2>Sobre Mí</h2>
         </div>
         <div class="content">
@@ -57,7 +57,7 @@
         </div>
     </section>
     <section class="skills" id="skills">
-        <div class="tittle heading white">
+        <div class="tittle">
             <h2>Conocimientos</h2>
             <p>Estas son algunas de las tecnologías que manejo, pero en caso de que el proyecto necesite de otras se pueden estudiar, aprender e implementar.</p>
         </div>
@@ -89,6 +89,19 @@
             </div>
         </div>
     </section>
+    <section class="knowledge" id="knowledge">
+        <div class="tittle heading white">
+            <h2>Conocimientos</h2>
+            <p>Estas son algunas de las tecnologías que manejo, pero en caso de que el proyecto necesite de otras se pueden estudiar, aprender e implementar.</p>
+        </div>
+        <div class="content">        
+            <div class="skills-text">
+                <img src="assets/images/analisis.svg" alt="">
+                <h2>Análisis</h2>
+                <p>Capacidad analítica para identificar problemas y encontrar soluciones usando herramientas tecnológicas.</p>
+            </div>
+        </div>
+    </section>
     <section class="works" id="works">
         <div class="tittle">
             <h2>My Works</h2>
@@ -105,7 +118,7 @@
                 <img src="assets/images/desktop-dev.svg" alt="">
             </div>
         </div>
-        <div class="heading">
+        <div class="content heading">
             <a href="#" class="btn">Repositorio GitHub</a>
         </div>
     </section>
@@ -116,10 +129,15 @@
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta consequatur dolores exercitationem dignissimos repellendus tenetur laborum, sit id ducimus cum!</p>
             </div>
             <div class="content">
+                <a href="mailto:die.idonosov@gmail.com.com">
+                    <img src="assets/images/gmail.svg" alt="">
+                </a>
                 <a href="randomsite.com">
-                <img src="assets/images/gmail.svg" alt=""></a>
-                <img src="assets/images/github.svg" alt="">
-                <img src="assets/images/linkedin.svg" alt="">
+                    <img src="assets/images/github.svg" alt="">
+                </a>
+                <a href="randomsite.com">
+                    <img src="assets/images/linkedin.svg" alt="">
+                </a>
             </div>
         </section>
         <div class="copyright">
@@ -131,6 +149,13 @@
             var header = document.querySelector('header');
             header.classList.toggle('sticky', window.scrollY > 0);
         });
+
+        function toggleMenu(){
+            var menuToggle = document.querySelector('.toggle');
+            var menu = document.querySelector('.menu');
+            menuToggle.classList.toggle('active');
+            menu.classList.toggle('active');
+        }
     </script>
 </body>
 </html>

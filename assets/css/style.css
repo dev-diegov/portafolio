@@ -20,6 +20,7 @@ header{
   justify-content: space-between; /*separamos los elementos de la caja*/
   align-items:center; /*centramos los elementos*/
   transition: 0.5s;
+  color: #111;
 }
 
 /*nótese selector distinto = element .class no es igual a element.class */
@@ -27,6 +28,15 @@ header.sticky{
   background: #fff;
   padding: 20px 100px;
   box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+  color: #111;
+}
+
+header.sticky .menu li a{
+  color: #111;
+}
+
+header.sticky .logo{
+  color: #111;
 }
 
 header .logo{
@@ -61,7 +71,7 @@ header ul li a{
 }
 
 header.sticky ul li a{
-  color: #111;
+  color: #fff;
 }
 
 section{
@@ -117,7 +127,7 @@ section{
 
 .btn{
   position: relative;
-  background: #2196f3; /*color fondo del botón*/
+  background: #ff9800; /*color fondo del botón*/
   display: inline-block; /*elemento en linea con formato blockdonde se pueden aplicar valores height y width*/
   color:#fff; /*color letra*/
   margin-top: 1.250em; /*margen de arriba 20px*/
@@ -145,6 +155,11 @@ section{
   justify-content: space-between;
 }
 
+.about{
+  background-color: #111;
+  color: #fff;
+}
+
 .about-text{
   padding-right: 1.875em; /*30px*/
 }
@@ -163,7 +178,7 @@ img{
 }
 
 .skills{
-  background-color: #111;
+  background-color: #fff;
 }
 
 .heading.white{
@@ -188,17 +203,26 @@ img{
 }
 
 .skills .content .skills-text:hover{
-  background: #2196f3;
+  background: #ff9800;
 }
 
+.knowledge .content .skills-text img,
 .skills .content .skills-text img{
   max-width: 80px;
   filter:invert(1)
 }
 
+.knowledge .content .skills-text h2,
 .skills .content .skills-text h2{
   font-size: 20px;
   font-weight: 600;
+}
+
+.knowledge{
+  background-color: #111;
+}
+.works{
+  background-color:#fff;
 }
 
 .works .content{
@@ -227,13 +251,134 @@ img{
   background: #111;
 }
 
-.contact .content img{
-  max-width: 32%;
+.contact .content{
+  align-items: center;
+}
+
+.contact .content a img {
+  max-width: 100%;
+  height: 180px;
 }
 
 .copyright{
-  background: #000;
+  background: #332f2f;
   color: #fff;
   text-align: center;
-  padding: 10px;
+  padding: 15px;
+}
+
+@media (max-width: 1024px){
+  header,
+  header.sticky{
+    padding: 20px 50px;
+    z-index: 1000;
+  }
+  header.sticky .toggle{
+    background-color: #111;
+  }
+  .menu{
+    position: fixed;
+    top:75px;
+    left:-100%;
+    display: block;
+    padding: 100px 50px;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    background: #fff;
+    transition: 0.5;
+    z-index:999;
+    border-top: 1px solid rgba(0,0,0,0.2);
+  }
+  .menu.active{
+    left: 0;
+  }
+
+  header ul li a{
+    color:#111;
+    font-size: 24px;
+    margin: 10px;
+  }
+  .toggle{
+    width: 40px;
+    height: 40px;
+    background: url(../images/menu.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 30px;
+    cursor: pointer;
+  }
+  .toggle.active{
+    background: url(../images/close.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 25px;
+    cursor: pointer;
+  }
+  section{
+    padding: 100px 50px;
+  }
+  .banner{
+    padding: 150px 50px 100px;
+  }
+  .banner h2{
+    font-size: 1.5em;
+  }
+  .banner h3{
+    font-size: 1em;
+  }
+  .btn{
+    margin-top:10px;
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+  .heading h2{
+    font-size: 24px;
+  }
+  .about-text{
+    font-size: 20px;
+  }
+  .content{
+    flex-direction: column;
+    align-items: center;
+  }
+  .w50{
+    margin-bottom: 20px;
+  }
+  .skills .content .skills-text{
+    margin: 10px;
+  }
+  .works .content .works-content{
+    width: 100%;
+    padding: 10px;
+  }
+  .contact .content a img{
+    margin: 10px;
+  }
+
+  @media (max-width: 600px){
+    header,
+    header.sticky{
+      padding: 20px 20px;
+    }
+    .banner{
+      padding: 150px 10px 100px;
+    }
+    .banner .banner-text{
+      margin: 0 auto;
+    }
+    .banner .banner-text a{
+      font-size: 32px;
+    }
+    .banner h2{
+      font-size: 2.2em;
+    }
+    .banner h3{
+      font-size: 1.4em;
+    }
+    .section{
+      padding: 100px 20px;
+    }
+
+  }
 }
