@@ -192,16 +192,18 @@ img{
   flex-direction: row;
 }
 
+.knowledge .content .skills-text,
 .skills .content .skills-text{
   padding: 10px 20px;
   background: #222;
   color: #fff;
-  max-width: 300px;
-  margin: 20px;
+  max-width: 285px;
+  margin: 5px;
   text-align: center;
   transition: 0.5s;
 }
 
+.knowledge .content .skills-text:hover,
 .skills .content .skills-text:hover{
   background: #ff9800;
 }
