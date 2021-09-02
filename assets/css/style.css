@@ -185,6 +185,7 @@ img{
   color:#fff
 }
 
+.knowledge .content,
 .skills .content{
   display: flex;
   justify-content: center;
@@ -211,7 +212,7 @@ img{
 .knowledge .content .skills-text img,
 .skills .content .skills-text img{
   max-width: 80px;
-  filter:invert(1)
+  height: 200px;
 }
 
 .knowledge .content .skills-text h2,
@@ -254,7 +255,10 @@ img{
 }
 
 .contact .content{
-  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  flex-direction: row;
 }
 
 .contact .content a img {
