@@ -1,0 +1,55 @@
+/* El selector * selecciona absolutamente todos los elementos */
+*{ 
+    /*Establecemos el margen y relleno en 0*/
+    padding:0; 
+    margin:0;
+}
+
+html{
+    font-size: 100%; /*tamaño de fuente en el documento = 16px*/
+}
+
+header{
+    position: fixed; /*ajustamos el header a la pantalla*/
+    width: 100%; /*ancho del header*/
+    height: 100px; /*altura header*/
+    display: flex; /*alineamos los elementos hijos - elemento padre*/
+    justify-content: space-between; /*separamos los elementos del header*/
+    text-transform: uppercase;
+    line-height: 100px;
+    transition: 0.45s ease-in-out; /*transicion con inicio y término lento*/
+    background-color: #0000003f; /*color del header*/
+    backdrop-filter: blur(0.8rem); /*transparencia*/
+    z-index: 10; /*posicion del header atras del nav*/
+}
+
+header .logo{
+    color: white; /*color de logo*/
+    margin: 0 5em; /*0 arriba abajo y 80px a los lados*/
+}
+
+header nav{
+    margin: 0 5em; /*distancia elementos de nav del margen*/
+}
+
+header nav ul{
+    display: flex; /*alineamos los elementos de la lista */
+    list-style: none; /*quitamos los puntos de la lista*/
+}
+
+header nav ul li a{
+    text-decoration: none; /*quitamos el delineado de los elementos a dentro de la lista ul li*/
+    margin: 0 1em; /*0 arriba abajo y 16px a los lados - separación elementos a*/
+    color: white; /*color de elementos a*/
+}
+
+#portada{
+    min-height: 100vh; /*usará todo el tamaño del largo dependiendo de la pantalla*/
+    background-image: url(../images/banner1.webp); /*imagen de fondo*/
+    position: relative;
+    background-size: cover; /*la imagen se expande a la pantalla*/
+    
+    background-color: rgb(30, 30, 30); 
+    background-blend-mode: soft-light;
+    
+}
