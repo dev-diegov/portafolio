@@ -15,8 +15,8 @@ header{
     height: 100px; /*altura header*/
     display: flex; /*alineamos los elementos hijos - elemento padre*/
     justify-content: space-between; /*separamos los elementos del header*/
-    text-transform: uppercase;
-    line-height: 100px;
+    text-transform: uppercase; /*elementos de header en mayusculas*/
+    line-height: 100px; /*alineado de elementos al medio del tamaño header*/
     transition: 0.45s ease-in-out; /*transicion con inicio y término lento*/
     background-color: #0000003f; /*color del header*/
     backdrop-filter: blur(0.8rem); /*transparencia*/
@@ -46,10 +46,37 @@ header nav ul li a{
 #portada{
     min-height: 100vh; /*usará todo el tamaño del largo dependiendo de la pantalla*/
     background-image: url(../images/banner1.webp); /*imagen de fondo*/
-    position: relative;
     background-size: cover; /*la imagen se expande a la pantalla*/
-    
-    background-color: rgb(30, 30, 30); 
-    background-blend-mode: soft-light;
-    
+    background-color: rgb(30, 30, 30); /*color de imagen*/
+    background-blend-mode: soft-light; /*tono de color de portada*/
+}
+
+#portada .portada-texto {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 200px 0;
+}
+
+#portada .portada-texto h1,h2{
+    color: white;
+    font-size: 2em;
+}
+
+#portada .portada-botones{
+    text-align: center;
+}
+
+#portada .portada-botones button{
+    color: white;
+    background: #ff9800;
+    width: auto;
+    height: auto;
+    font-size: 1.625em; /*26px*/
+}
+
+#sobremi .sobremi-contenido{
+    display: flex;
+    justify-content: center;
 }
