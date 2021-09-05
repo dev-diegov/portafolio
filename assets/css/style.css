@@ -11,25 +11,26 @@ html{
 
 header{
     position: fixed; /*ajustamos el header a la pantalla*/
-    width: 100%; /*ancho del header*/
+    width: 100%;
     height: 100px; /*altura header*/
-    display: flex; /*alineamos los elementos hijos - elemento padre*/
-    justify-content: space-between; /*separamos los elementos del header*/
-    text-transform: uppercase; /*elementos de header en mayusculas*/
-    line-height: 100px; /*alineado de elementos al medio del tamaño header*/
     transition: 0.45s ease-in-out; /*transicion con inicio y término lento*/
     background-color: #0000003f; /*color del header*/
     backdrop-filter: blur(0.8rem); /*transparencia*/
     z-index: 10; /*posicion del header atras del nav*/
 }
 
-header .logo{
-    color: white; /*color de logo*/
-    margin: 0 5em; /*0 arriba abajo y 80px a los lados*/
+header nav{
+    display: flex; /*alineamos los elementos hijos - elemento padre*/
+    justify-content: space-between; /*separamos los elementos del nav*/
+    line-height: 100px; /*alineado de elementos al medio del tamaño header*/
+    text-transform: uppercase; /*elementos del nav en mayusculas*/
+    max-width: 1200px; /*maximo de largo que tendrá el nav*/
+    margin: 0 auto;  /*centramos elementos del nav*/
 }
 
-header nav{
-    margin: 0 5em; /*distancia elementos de nav del margen*/
+header nav .logo{
+    color: white;
+    padding: 0 2.5em; /*40px de relleno a los lados*/
 }
 
 header nav ul{
@@ -37,9 +38,14 @@ header nav ul{
     list-style: none; /*quitamos los puntos de la lista*/
 }
 
+header nav ul li{
+    width: max-content; /*se muestra hacia la derecha todo el contenido, no hay salto de linea*/
+    margin: 0 0.625em;  /*10px de margen entre elementos*/
+}
+
 header nav ul li a{
+    padding: 0 0.75em; /*12px a los lados*/
     text-decoration: none; /*quitamos el delineado de los elementos a dentro de la lista ul li*/
-    margin: 0 1em; /*0 arriba abajo y 16px a los lados - separación elementos a*/
     color: white; /*color de elementos a*/
 }
 
@@ -52,11 +58,11 @@ header nav ul li a{
 }
 
 #portada .portada-texto {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-    padding: 200px 0;
+    display: flex; /*elementos alineados en flex*/
+    flex-direction: column; /*elementos uno arriba de otro*/
+    align-items: center; /*centramos el texto*/
+    position: relative; /*posicion relative para que los demas elementos no se muevan*/
+    top:300px; /*movemos elementos 250px de arriba*/
 }
 
 #portada .portada-texto h1,h2{
@@ -65,18 +71,36 @@ header nav ul li a{
 }
 
 #portada .portada-botones{
-    text-align: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-wrap:wrap;
+    top: 400px;
 }
 
 #portada .portada-botones button{
-    color: white;
-    background: #ff9800;
-    width: auto;
-    height: auto;
+    color: white; /*color texto botones*/
+    background: #ff9800; /*color botones*/
+    height: auto; /*largo automático*/
     font-size: 1.625em; /*26px*/
+    padding: 0.75em 0.75em; /*12px relleno arriba y a los lados*/
+    margin: 0 0.75em; /*margen entre botones 12px a los lados*/
 }
 
-#sobremi .sobremi-contenido{
+#sobremi {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+}
+
+#sobremi .contenido{
+    font-size: 1.6em;
+    margin: 200px 100px;
+}
+
+.w50{
+    min-width: 50%;
+}
+
+img{
+    max-width: 90%;
 }
