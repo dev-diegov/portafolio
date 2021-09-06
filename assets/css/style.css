@@ -41,6 +41,7 @@ body{
     font-size: 1.875em; /*30px tamaño letra*/
     padding: 0 1.250em; /*relleno de 20px a los lados*/ 
     line-height: 60px; /*alto de linea, menu centrado en el header versión movil*/
+    cursor: pointer; /*hacemos el boton clickeable*/
     display: none; /*lo ocultamos en modo escritorio*/
 }
 
@@ -79,7 +80,7 @@ body{
         padding: 0 1.250em; /*20px de ancho*/
         line-height: 60px; /*alto de linea, logo centrado en el header*/
     }
-    .header .nav .nav-menu{
+    .nav-menu{
         flex-direction: column; /*elementos del nav uno arriba de otro*/
         align-items: center; /*centramos los elementos*/
         background-color: #2c3e50; /*color del nav-menu*/
@@ -87,8 +88,23 @@ body{
         left: 0;
         top: 60px; /*posicion de 60px para que se vea el header*/
         width: 100%; /*ancho del nav-menu*/
-        height: calc(100vh - 60px);
-        overflow-y: auto;
+        height: calc(100vh - 60px); /*100% - altura del nav-menu*/
+        overflow-y: auto; /*cada vez que se necesite el scroll/ruedita lo añadirá*/
         padding: 1.250em 0; /*relleno arriba y abajo 20px 0 a los lados*/
+        left: 100%;
+        transition: left 0.3s;
+    }
+    .header .nav .nav-menu .nav-menu-item{
+        line-height: 70px;
+    }
+    .header .nav .nav-menu .nav-menu-item a:hover{
+        background: none;
+        color: #83c5f7;
+    }
+    .header .nav .nav-toggle{
+        display: block;
+    }
+    .nav-menu_visible{
+        left: 0; /*hacemos que el menu sea visible*/
     }
 }
