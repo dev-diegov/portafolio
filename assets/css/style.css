@@ -106,8 +106,43 @@ body{
     100%{ 
       background-image: url(../images/banner4.webp); 
     } 
-  }
+}
 
+.banner .banner-text{
+    width: 100%;
+    height: 80px;
+    font-weight: bold;
+    color: white;
+    display: flex;
+    justify-content: center;
+    line-height:80px;
+    font-size: 60px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    overflow: hidden;
+}
+
+.banner .banner-text ul{
+    color: #ff9800;
+    padding-left: 10px;
+    list-style: none; /*quitamos los puntos de la lista*/
+    animation: change-banner-text-ul 6s infinite;
+}
+
+@keyframes change-banner-text-ul{
+    0%{margin-top: 0;}
+    50%{margin-top: -80px;}
+    80%{margin-top: -160px;}
+    100%{margin-top: 0;}
+}
+
+/*Media Queries Vertical*/
+
+/*iPad Pro*/
 @media (max-width: 1024px){
     .header{
         height: 60px; /*achicamos el largo del header*/
@@ -146,5 +181,91 @@ body{
     }
     .banner{
         background-position:center; /*posición de imagen de fondo*/
+    }
+    .banner .banner-text{
+        font-size: 48px;
+    }
+    .banner .banner-text ul{
+        padding-left: 10px;
+    }
+}
+
+/*iPad*/ 
+@media (max-width: 768px){
+    .banner .banner-text{
+        font-size: 36px;
+    }
+    .banner .banner-text ul{
+        padding-left: 10px;
+    }
+}
+
+/*Surface Duo*/ 
+@media (max-width: 540px){
+    .banner .banner-text{
+        font-size: 25px;
+    }
+    .banner .banner-text ul{
+        padding-left: 10px;
+    }
+}
+
+/*iPhone 6/7/8 Plus*/ 
+@media (max-width: 415px){
+    .banner .banner-text{
+        font-size: 19px;
+    }
+    .banner .banner-text ul{
+        padding-left: 10px;
+    }
+}
+
+/*Pixel 2 & Pixel 2 XL*/ 
+@media (max-width: 412px){
+    .banner .banner-text{
+        font-size: 19px;
+    }
+    .banner .banner-text ul{
+        padding-left: 10px;
+    }
+}
+
+/*iPhone 6/7/8*/ 
+@media (max-width: 376px){
+    .banner .banner-text{
+        font-size: 17px;
+    }
+    .banner .banner-text ul{
+        padding-left: 10px;
+    }
+}
+
+/*Galaxy S5 & Moto G4*/
+@media (max-width: 360px){
+    .banner .banner-text{
+        font-size: 16px;
+    }
+    .banner .banner-text ul{
+        padding-left: 10px;
+    }
+}
+
+/*iPhone 5/SE*/
+@media (max-width: 320px){
+    .banner .banner-text{
+        font-size: 14px;
+    }
+    .banner .banner-text ul{
+        padding-left: 10px;
+    }
+}
+
+/*Galaxy Fold*/
+@media (max-width: 282px){
+    .banner .banner-text{
+        font-size: 13px;
+    }
+    .banner .banner-text ul{
+        padding-left: 5px;
     }
 }
