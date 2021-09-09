@@ -16,6 +16,7 @@ body{
     width: 100%; /*ancho del 100% del header*/
     top: 0;
     left: 0;
+    z-index: 99;
 }
 
 .header .nav{
@@ -117,11 +118,8 @@ body{
     justify-content: center;
     line-height:80px;
     font-size: 60px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+    position:relative;
+    top: 250px;
     margin: auto;
     overflow: hidden;
 }
@@ -204,6 +202,17 @@ body{
 @media (max-width: 540px){
     .banner .banner-text{
         font-size: 25px;
+    }
+    .banner .banner-text ul{
+        padding-left: 10px;
+    }
+}
+
+
+/*Mobile L 425px*/ 
+@media (max-width: 426px){
+    .banner .banner-text{
+        font-size: 20px;
     }
     .banner .banner-text ul{
         padding-left: 10px;
