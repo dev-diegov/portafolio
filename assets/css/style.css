@@ -157,6 +157,38 @@ body::-webkit-scrollbar {
     text-align: center;
 }
 
+.about{
+    background: whitesmoke;
+    text-align: center;
+    padding: 90px 0;
+}
+
+.about h1{
+    font-size: 250%;
+}
+
+.about .about-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about .about-content .about-text{
+    margin: 0 50px;
+}
+
+.about .about-content .about-text p{
+    font-size: 150%;
+}
+
+.w50{
+    min-width: 50%; /*mínimo de ancho 50%*/
+  }
+  
+  img{
+    max-width: 100%;
+  }
+
 /*Media Queries Vertical*/
 
 @media (max-width: 1160px){
@@ -188,71 +220,79 @@ body::-webkit-scrollbar {
         height: calc(100vh - 60px); /*100% - altura del nav-menu*/
         overflow-y: auto; /*cada vez que se necesite el scroll/ruedita lo añadirá*/
         padding: 1.250em 0; /*relleno arriba y abajo 20px 0 a los lados*/
-        left: 100%;
-        transition: left 0.3s;
+        left: 100%; /*importante para mover el menu de izquierda a derecha*/
+        transition: left 0.3s; /*transición */
     }
     .header .nav .nav-menu .nav-menu-item{
-        line-height: 70px;
+        line-height: 70px; /*alto de linea elementos nav en menu*/
     }
     .header .nav .nav-menu .nav-menu-item a:hover{
         background: none;
-        color: #83c5f7;
+        color: #ff9800; /*color al pasar el mouse por elementos nav*/
     }
     .header .nav .nav-toggle{
-        display: block;
+        display: block; /*ocultamos boton menu en laptops/pc*/
     }
     .header .nav .nav-menu_visible{
-        left: 0; /*hacemos que el menu sea visible*/
+        left: 0; /*hacemos que el menu sea invisible*/
     }
     .banner{
         background-position:center; /*posición de imagen de fondo*/
     }
     .banner .banner-text{
-        font-size: 240%;
+        font-size: 240%; /*tamaño texto del banner*/
     }
-    .banner .banner-text ul{
-        padding-left: 10px;
+    .about{
+        padding-top: 15px;
+    }
+    .about .about-content{
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-top: 25px;
+    }
+    .about .about-content .about-text p{
+        font-size: 100%;
     }
 }
 
 @media (max-width: 820px){
     .banner .banner-text{
-        font-size: 200%;
+        font-size: 200%;/*tamaño texto del banner*/
     }
 }
 
 @media (max-width: 680px){
     .banner .banner-text{
-        font-size: 150%;
+        font-size: 150%;/*tamaño texto del banner*/
     }
 }
 
 @media (max-width: 500px){
     .banner .banner-text{
-        font-size: 110%;
+        font-size: 110%;/*tamaño texto del banner*/
     }
 }
 
 @media (max-width: 367px){
     .banner .banner-text{
-        font-size: 100%;
+        font-size: 100%;/*tamaño texto del banner*/
     }
 }
 
 @media (max-width: 335px){
     .banner .banner-text{
-        font-size: 90%;
+        font-size: 90%;/*tamaño texto del banner*/
     }
 }
 
 @media (max-width: 300px){
     .banner .banner-text{
-        font-size: 80%;
+        font-size: 80%;/*tamaño texto del banner*/
     }
 }
 
 @media (max-width: 268px){
     .banner .banner-text{
-        font-size: 75%;
+        font-size: 75%;/*tamaño texto del banner*/
     }
 }
