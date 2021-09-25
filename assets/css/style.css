@@ -1,8 +1,8 @@
 *{
     margin: 0;  /*reestablecemos los margenes*/
     box-sizing: border-box;
-    scroll-behavior: smooth;
-    font-size: 100%;
+    scroll-behavior: smooth; /*transicion lenta al mover scroll*/
+    font-size: 100%; /*tamaño de texto*/
 }
 
 body{
@@ -12,12 +12,12 @@ body{
 
 body::-webkit-scrollbar {
     width: 1.1rem;
-  }
-  
-  body::-webkit-scrollbar-thumb {
+}
+
+body::-webkit-scrollbar-thumb {
     background-color: #ff9800;
     outline: 1px solid #ff9800;
-  }
+}
 
 .header{
     background-color: #0000003f; /*color del header*/
@@ -160,11 +160,21 @@ body::-webkit-scrollbar {
 .about{
     background: whitesmoke;
     text-align: center;
-    padding: 90px 0;
+    padding-top: 15px;
 }
 
 .about h1{
     font-size: 250%;
+    color: #ff9800;
+    color: #fff;
+    background-color: #ff9800;
+    font-family: "Quicksand", sans-serif;
+    font-weight: bold;
+    padding: 7px 5px;
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+    font-family: "Quicksand", sans-serif;
 }
 
 .about .about-content{
@@ -179,15 +189,59 @@ body::-webkit-scrollbar {
 
 .about .about-content .about-text p{
     font-size: 150%;
+    font-family: "Quicksand", sans-serif;
 }
 
 .w50{
     min-width: 50%; /*mínimo de ancho 50%*/
-  }
+}
   
-  img{
+img{
     max-width: 100%;
+}
+
+.skills{
+    background: #0a0a0a;
+    text-align: center;
+    padding: 20px 0;
+    color: whitesmoke;
+}
+
+.skills h1{
+    font-size: 250%;
+}
+.skills h1 span{
+    color: #ff9800;
+}
+
+.skills p{
+    font-size: 150%;
+}
+
+.skills .skills-content{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding-top: 15px;
   }
+
+.skills .skills-content .skills-text{
+    padding: 10px  40px;
+    color: whitesmoke;
+    max-width: 285px;
+    margin: 35px;
+    background: #ff9800;
+}
+
+.skills .skills-content .skills-text h2{
+    font-size: 150%;
+}
+
+.skills .skills-content .skills-text p{
+    font-size: 100%;
+}
+    
 
 /*Media Queries Vertical*/
 
@@ -265,11 +319,17 @@ body::-webkit-scrollbar {
     .banner .banner-text{
         font-size: 150%;/*tamaño texto del banner*/
     }
+    .about h1{
+        font-size: 200%;
+    }
 }
 
 @media (max-width: 500px){
     .banner .banner-text{
         font-size: 110%;/*tamaño texto del banner*/
+    }
+    .about h1{
+        font-size: 190%;
     }
 }
 
