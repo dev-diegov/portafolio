@@ -174,7 +174,6 @@ body::-webkit-scrollbar-thumb {
     width: 50%;
     text-align: center;
     margin: 0 auto;
-    font-family: "Quicksand", sans-serif;
 }
 
 .about .about-content{
@@ -280,7 +279,15 @@ img{
 }
 
 .knowledge .knowledge-tittle h2{
-    font-size: 200%;
+    font-size: 180%;
+    color: #fff;
+    background-color: #ff9800;
+    font-family: "Quicksand", sans-serif;
+    font-weight: bold;
+    padding: 7px 5px;
+    width: max-content;
+    text-align: center;
+    margin: 0 auto;
 }
 
 .knowledge .knowledge-content{
