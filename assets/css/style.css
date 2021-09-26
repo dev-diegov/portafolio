@@ -287,11 +287,13 @@ img{
     display: flex;
     padding: 15px 0;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .knowledge .knowledge-content .image-box {
     height: 100px;
     width: 100px;
+    margin: 5px 10px;
 }
   
 .knowledge .knowledge-content .image-box img {
