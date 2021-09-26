@@ -261,36 +261,72 @@ img{
     margin: 15px 30px;
 }
 
-.knowledge .frontend{
-    display: flex;
-    padding: 15px 0;
-}
-
-.knowledge .frontend-tittle{
+.knowledge .knowledge-tittle{
     align-items: center;
     padding: 10px 0;
 }
 
-.knowledge .frontend .image-box {
+.knowledge .knowledge-content{
+    display: flex;
+    padding: 15px 0;
+}
+
+.knowledge .knowledge-content .image-box {
     margin: auto;
     height: 100px;
     width: 100px;
 }
   
-.knowledge .frontend .image-box img {
+.knowledge .knowledge-content .image-box img {
     height: 100%;
     object-fit: cover;
     max-width: 100%;
     border-radius: 50%;
-    background: #000;
+    background: black;
     /* box-shadow: 0 0.2rem 1rem 0.3rem rgb(0 255 254 / 35%) !important; */
     transition: 0.3s ease-in-out;
 }
 
-.knowledge .frontend .image-box img:hover {
+.knowledge .knowledge-content .image-box img:hover {
     transform: translateY(-8px);
     filter: brightness(60%);
     box-shadow: 0 0.2rem 1rem 0.2rem rgb(0 255 254 / 35%) !important;
+}
+
+.works{
+    background: black;
+    text-align: center;
+    padding: 15px;
+}
+
+.works h1{
+    color: white;
+    font-size: 250%;
+}
+
+.works h1 span{
+    color: #ff9800;
+}
+
+.works p{
+    font-size: 150%;
+    color: white;
+}
+
+.works .works-content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.works .works-content .works-content-item{
+    padding: 10px 50px;
+    background: #222;
+    max-width: 300px;
+    margin:50px;
+}
+
+.works .works-content .works-content-item img{
+    max-width: 100%;
 }
 
 footer .copyright{
@@ -299,6 +335,7 @@ footer .copyright{
     text-align: center;
     padding: 15px;
 }
+
 
 /*Media Queries Vertical*/
 
@@ -377,7 +414,7 @@ footer .copyright{
     .about h1{
         font-size: 200%;
     }
-    .knowledge .frontend{
+    .knowledge .knowledge-item{
         flex-wrap: wrap;
     }
 }
