@@ -165,7 +165,6 @@ body::-webkit-scrollbar-thumb {
 
 .about h1{
     font-size: 250%;
-    color: #ff9800;
     color: #fff;
     background-color: #ff9800;
     font-family: "Quicksand", sans-serif;
@@ -210,6 +209,7 @@ img{
 .skills h1{
     font-size: 250%;
 }
+
 .skills h1 span{
     color: #ff9800;
 }
@@ -241,7 +241,64 @@ img{
 .skills .skills-content .skills-text p{
     font-size: 100%;
 }
-    
+
+.knowledge{
+    background: whitesmoke;
+    text-align: center;
+    padding-top: 15px;
+}
+
+.knowledge h1{
+    font-size: 250%;
+}
+
+.knowledge h1 span{
+    color: #ff9800;
+}
+
+.knowledge p{
+    font-size: 150%;
+    margin: 15px 30px;
+}
+
+.knowledge .frontend{
+    display: flex;
+    padding: 15px 0;
+}
+
+.knowledge .frontend-tittle{
+    align-items: center;
+    padding: 10px 0;
+}
+
+.knowledge .frontend .image-box {
+    margin: auto;
+    height: 100px;
+    width: 100px;
+}
+  
+.knowledge .frontend .image-box img {
+    height: 100%;
+    object-fit: cover;
+    max-width: 100%;
+    border-radius: 50%;
+    background: #000;
+    /* box-shadow: 0 0.2rem 1rem 0.3rem rgb(0 255 254 / 35%) !important; */
+    transition: 0.3s ease-in-out;
+}
+
+.knowledge .frontend .image-box img:hover {
+    transform: translateY(-8px);
+    filter: brightness(60%);
+    box-shadow: 0 0.2rem 1rem 0.2rem rgb(0 255 254 / 35%) !important;
+}
+
+footer .copyright{
+    background: #332f2f;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+}
 
 /*Media Queries Vertical*/
 
@@ -249,8 +306,6 @@ img{
     .header .nav .nav-menu .nav-menu-item{
         font-size: 80%;
     }
-    
-
 }
 
 /*iPad Pro*/
@@ -321,6 +376,9 @@ img{
     }
     .about h1{
         font-size: 200%;
+    }
+    .knowledge .frontend{
+        flex-wrap: wrap;
     }
 }
 
