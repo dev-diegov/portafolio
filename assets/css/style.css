@@ -279,6 +279,10 @@ img{
     padding: 10px 0;
 }
 
+.knowledge .knowledge-tittle h2{
+    font-size: 200%;
+}
+
 .knowledge .knowledge-content{
     display: flex;
     padding: 15px 0;
@@ -288,7 +292,6 @@ img{
 .knowledge .knowledge-content .image-box {
     height: 100px;
     width: 100px;
-    margin: 0 15px;
 }
   
 .knowledge .knowledge-content .image-box img {
