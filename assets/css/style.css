@@ -316,13 +316,14 @@ img{
 .works .works-content{
     display: flex;
     justify-content: space-between;
+    padding: 15px 0;
 }
 
 .works .works-content .works-content-item{
-    padding: 10px 50px;
+    padding: 10px 10px;
     background: #222;
-    max-width: 300px;
-    margin:50px;
+    max-width: 350px;
+    margin: 10px 10px;
 }
 
 .works .works-content .works-content-item img{
@@ -405,6 +406,11 @@ footer .copyright{
     .banner .banner-text{
         font-size: 200%;/*tamaño texto del banner*/
     }
+    .works .works-content{
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0 10px;
+    }
 }
 
 @media (max-width: 680px){
@@ -414,7 +420,7 @@ footer .copyright{
     .about h1{
         font-size: 200%;
     }
-    .knowledge .knowledge-item{
+    .knowledge .knowledge-content{
         flex-wrap: wrap;
     }
 }
