@@ -87,6 +87,7 @@ body::-webkit-scrollbar-thumb {
     background-image: url(../images/banner1.webp) ; /*imagen de fondo banner*/
     background-size: cover; /*la imagen se expande a la pantalla*/
     min-height: 100vh;/*altura del 100 del viewport del dispositivo*/
+    
     background-color: rgb(30, 30, 30); /*color de fondo*/
     background-blend-mode: soft-light; /*propiedad de color*/
     animation: banner 25s infinite linear; /*animación que llama a banner, 25seg, infinito */
@@ -398,14 +399,14 @@ footer .copyright{
     }
 }
 /* iPads (portrait/vertical) */
+
+/* iPads (portrait/vertical) */
 @media (max-width : 1024px){
-    html{
-        font-size: 70%;
-    }
     .header{
         height: 60px; /*achicamos el largo del header*/
     }
     .header .nav .logo{
+        font-size: 1.563em; /*25px tamaño letra*/
         padding: 0 1.250em; /*20px de ancho*/
         line-height: 60px; /*alto de linea, logo centrado en el header*/
     }
@@ -439,6 +440,12 @@ footer .copyright{
     .banner{
         background-position:center; /*posición de imagen de fondo*/
     }
+    .banner .banner-text{
+        font-size: 200%; /*tamaño texto del banner*/
+    }
+    .banner .banner-description{
+        font-size: 170%; /*tamaño texto del banner*/
+    }
     .about{
         padding-top: 15px;
     }
@@ -447,16 +454,63 @@ footer .copyright{
         justify-content: center;
         padding-top: 25px;
     }
-}
-/* TABLETS*/
-@media screen and (max-width: 767px) and (min-width:576px){
-    html{
-        font-size: 57%;
+    .about .about-content .about-text p{
+        font-size: 100%;
     }
 }
-/* PHONES <= 575px */
-@media screen and (max-width: 576px){
-    html{
-        font-size: 40%;
+
+@media only screen and (min-device-width : 540px) and (max-device-width : 768px) {
+    .banner .banner-text{
+        font-size: 150%; /*tamaño texto del banner*/
     }
-} 
+    .banner .banner-description{
+        font-size: 130%; /*tamaño texto del banner*/
+    }
+}
+
+/*Iphone 6 7 8 VERTICAL*/
+@media only screen and (min-device-width : 414px) and (max-device-width : 540px) {
+    .banner .banner-text{
+        font-size: 110%; /*tamaño texto del banner*/
+    }
+    .banner .banner-description{
+        font-size: 100%; /*tamaño texto del banner*/
+    }
+}
+
+/*Pixel 2 XL - Pixel 2*/
+@media only screen and (min-device-width : 411px) and (max-device-width : 414px) {
+    .banner .banner-text{
+        font-size: 110%; /*tamaño texto del banner*/
+    }
+    .banner .banner-description{
+        font-size: 100%; /*tamaño texto del banner*/
+    }
+}
+/*iPhone X*/
+@media only screen and (min-device-width : 375px) and (max-device-width : 411px) {
+    .banner .banner-text{
+        font-size: 100%; /*tamaño texto del banner*/
+    }
+    .banner .banner-description{
+        font-size: 90%; /*tamaño texto del banner*/
+    }
+}
+/*Galaxy S5 - Moto G4*/
+@media only screen and (min-device-width : 360px) and (max-device-width : 375px) {
+    .banner .banner-text{
+        font-size: 100%; /*tamaño texto del banner*/
+    }
+    .banner .banner-description{
+        font-size: 90%; /*tamaño texto del banner*/
+    }
+}
+/*Galaxy Fold*/
+@media only screen and (min-device-width : 280px) and (max-device-width : 360px) {
+    .banner .banner-text{
+        font-size: 80%; /*tamaño texto del banner*/
+    }
+    .banner .banner-description{
+        font-size: 70%; /*tamaño texto del banner*/
+    }
+}
