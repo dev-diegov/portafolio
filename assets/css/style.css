@@ -159,7 +159,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .about{
-    background: whitesmoke;
+    background: #2d2f2e;
     text-align: center;
     padding-top: 15px;
 }
@@ -189,6 +189,7 @@ body::-webkit-scrollbar-thumb {
 .about .about-content .about-text p{
     font-size: 150%;
     font-family: "Quicksand", sans-serif;
+    color:whitesmoke ;
 }
 
 .about .about-content .about-text .btn{
@@ -244,6 +245,7 @@ img{
     max-width: 285px;
     margin: 35px;
     background: #ff9800;
+    border-radius: 15px;
 }
 
 .skills .skills-content .skills-text h2{
@@ -255,13 +257,14 @@ img{
 }
 
 .knowledge{
-    background: whitesmoke;
+    background: #2d2f2e;
     text-align: center;
     padding: 15px 0;
 }
 
 .knowledge h1{
     font-size: 250%;
+    color: whitesmoke;
 }
 
 .knowledge h1 span{
@@ -271,6 +274,7 @@ img{
 .knowledge p{
     font-size: 150%;
     margin: 15px 30px;
+    color: whitesmoke;
 }
 
 .knowledge .knowledge-tittle{
@@ -286,8 +290,8 @@ img{
     font-weight: bold;
     padding: 7px 5px;
     width: max-content;
-    text-align: center;
     margin: 0 auto;
+    border-radius: 15px;
 }
 
 .knowledge .knowledge-content{
@@ -358,17 +362,19 @@ img{
 }
 
 .contact{
-    background: whitesmoke;
+    background: #2d2f2e;
     text-align: center;
     padding: 15px 0;
 }
 
 .contact h1{
     font-size: 250%;
+    color: whitesmoke;
 }
 
 .contact p{
     font-size: 150%;
+    color: whitesmoke;
 }
   
 .contact .content{
@@ -384,8 +390,8 @@ img{
     height: 150px;
 }
 
-footer .copyright{
-    background: #332f2f;
+footer{
+    background: #181717;
     color: #fff;
     text-align: center;
     padding: 15px;
