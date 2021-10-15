@@ -473,6 +473,9 @@ footer{
     .works p{
         font-size: 100%;
     }
+    .works .works-content .works-content-item img{
+        height: auto;
+    }
     .contact p{
         font-size: 100%;
     }
