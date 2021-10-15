@@ -494,3 +494,12 @@ footer{
         font-size: 110%; /*tamaño texto del banner*/
     }
 }
+
+@media only screen and (min-device-width : 280px) and (max-device-width : 459px) {
+    .banner .banner-text{
+        font-size: 90%; /*tamaño texto del banner*/
+    }
+    .banner .banner-description{
+        font-size: 80%; /*tamaño texto del banner*/
+    }
+}
