@@ -240,10 +240,10 @@ img{
   }
 
 .skills .skills-content .skills-text{
-    padding: 10px  40px;
+    padding: 8px  40px;
     color: whitesmoke;
-    max-width: 285px;
-    margin: 35px;
+    max-width: 240px;
+    margin: 25px;
     background: #ff9800;
     border-radius: 15px;
 }
@@ -254,6 +254,10 @@ img{
 
 .skills .skills-content .skills-text p{
     font-size: 100%;
+}
+
+.skills .skills-content .skills-text img{
+    height: 35%;
 }
 
 .knowledge{
