@@ -2,11 +2,12 @@
     margin: 0;  /*reestablecemos los margenes*/
     box-sizing: border-box;
     scroll-behavior: smooth; /*transicion lenta al mover scroll*/
-    font-size: 100%; /*tamaño de texto*/
 }
 
 body{
-    font-family: "Mulish",sans-serif; /*tipo de fuente*/
+    text-rendering: optimizeLegibility;
+    font-size: 16px; /*tamaño total de la letra 16px = 100%*/
+    font-family: 'Work Sans','Arial', sans-serif; /*tipo de letra a usar*/
 }
 
 body::-webkit-scrollbar {
@@ -165,7 +166,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .about h1{
-    font-size: 250%;
+    font-size: 200%;
     color: #fff;
     background-color: #ff9800;
     font-family: "Quicksand", sans-serif;
@@ -188,7 +189,6 @@ body::-webkit-scrollbar-thumb {
 
 .about .about-content .about-text p{
     font-size: 150%;
-    font-family: "Quicksand", sans-serif;
     color:whitesmoke ;
 }
 
@@ -220,7 +220,7 @@ img{
 }
 
 .skills h1{
-    font-size: 250%;
+    font-size: 200%;
 }
 
 .skills h1 span{
@@ -263,11 +263,11 @@ img{
 .knowledge{
     background: #2d2f2e;
     text-align: center;
-    padding: 15px 0;
+    padding: 20px 0;
 }
 
 .knowledge h1{
-    font-size: 250%;
+    font-size: 200%;
     color: whitesmoke;
 }
 
@@ -277,7 +277,6 @@ img{
 
 .knowledge p{
     font-size: 150%;
-    margin: 15px 30px;
     color: whitesmoke;
 }
 
@@ -290,7 +289,6 @@ img{
     font-size: 180%;
     color: #fff;
     background-color: #ff9800;
-    font-family: "Quicksand", sans-serif;
     font-weight: bold;
     padding: 7px 5px;
     width: max-content;
@@ -330,12 +328,12 @@ img{
 .works{
     background: black;
     text-align: center;
-    padding: 15px;
+    padding: 20px 0;
 }
 
 .works h1{
     color: white;
-    font-size: 250%;
+    font-size: 200%;
 }
 
 .works h1 span{
@@ -368,11 +366,11 @@ img{
 .contact{
     background: #2d2f2e;
     text-align: center;
-    padding: 15px 0;
+    padding: 20px 0;
 }
 
 .contact h1{
-    font-size: 250%;
+    font-size: 200%;
     color: whitesmoke;
 }
 
@@ -391,14 +389,14 @@ img{
   
 .contact .content a img {
     max-width: 100%;
-    height: 150px;
+    height: 140px;
 }
 
 footer{
     background: #181717;
     color: #fff;
     text-align: center;
-    padding: 15px;
+    padding: 10px;
 }
 
 /*Media Queries Vertical*/
